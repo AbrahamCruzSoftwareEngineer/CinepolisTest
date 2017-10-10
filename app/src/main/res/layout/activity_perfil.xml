@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.abecruz.cinepolistestia.Perfil.ui.Perfil">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/title_perfil"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/message"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@drawable/user" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/message"
+                android:layout_below="@+id/imageView"
+                android:text="Bienvenido" />
+
+            <EditText
+                android:id="@+id/perfilNombreUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_below="@+id/textView2"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Nombre de usuario"
+                android:textSize="15dp"
+                android:layout_alignEnd="@+id/message" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/perfilNombreUsuario"
+                android:layout_below="@+id/perfilNombreUsuario"
+                android:layout_marginTop="11dp"
+                android:text="Correo electrónico" />
+
+            <EditText
+                android:id="@+id/perfilCorreoUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/perfilNombreUsuario"
+                android:layout_alignStart="@+id/textView3"
+                android:layout_below="@+id/textView3"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="correo@correo.com"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/perfilNumeroTarjeta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/message"
+                android:layout_alignStart="@+id/perfilCorreoUsuario"
+                android:layout_below="@+id/perfilCorreoUsuario"
+                android:layout_marginTop="18dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:text="Número de tarjeta"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/perfilBotonObtenerTx"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignEnd="@+id/perfilNumeroTarjeta"
+                android:layout_alignStart="@+id/perfilNumeroTarjeta"
+                android:layout_below="@+id/perfilNumeroTarjeta"
+                android:text="Obtener transacciones"
+                android:textAlignment="center"
+                android:textSize="15dp" />
+
+            <ListView
+                android:id="@+id/perfilListTx"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/perfilBotonObtenerTx"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true" />
+
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/navigation" />
+
+</LinearLayout>

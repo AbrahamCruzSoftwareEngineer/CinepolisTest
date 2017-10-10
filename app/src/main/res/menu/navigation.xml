@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_perfil"
+        android:title="@string/title_perfil" />
+
+    <item
+        android:id="@+id/navigation_cartelera"
+        android:title="@string/title_cartelera" />
+
+    <item
+        android:id="@+id/navigation_complejo"
+        android:title="@string/title_complejo" />
+
+</menu>

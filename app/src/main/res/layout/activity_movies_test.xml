@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.abecruz.cinepolistestia.Login.ui.MoviesTest">
+
+    <EditText
+        android:id="@+id/login_TextView_User"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="pruebas_beto_ia@yahoo.com"
+        android:layout_marginBottom="35dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_above="@+id/login_TextView_Password"/>
+
+    <EditText
+        android:id="@+id/login_TextView_Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:inputType="textPersonName"
+        android:text="Pruebas01"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="215dp"
+        android:layout_marginBottom="81dp"
+        android:layout_above="@+id/login_button"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar sesión"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="290dp"
+        android:layout_marginBottom="169dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
